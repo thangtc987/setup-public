@@ -1,1 +1,1 @@
-echo Hello script
+yes | unminimize
