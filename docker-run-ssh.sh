@@ -1,2 +1,2 @@
 echo Running... &&
-ssh start && service --status-all && tail -f /dev/null
+service ssh start && service --status-all && tail -f /dev/null
