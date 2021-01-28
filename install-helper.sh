@@ -3,4 +3,4 @@
 # run below to install
 # wget -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/install-helper.sh | bash
 
-wget -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/x.sh && install x.sh && rm x.sh && x
+wget -nv https://raw.githubusercontent.com/thangtc987/setup-public/main/x.sh && sudo install x.sh /usr/bin/x && rm x.sh && x
