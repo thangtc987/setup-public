@@ -1,9 +1,8 @@
 #!/bin/bash
 
-echo Version: 0.1
-
-if [[ "$1" == "help" ]]; then
+if [[ -z "$1" ]]; then
     cat <<EOF 
+Version: 0.1
 USAGE: 
     x help          Print this help
     x upgrade       Reinstall this app
