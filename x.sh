@@ -11,5 +11,7 @@ EOF
 elif [[ "$1" == "upgrade" ]]; then
     wget -nv -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/install-helper.sh | bash
 else
-    wget -q -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/$1.sh | bash
+    v_name=$1
+    shift
+    wget -q -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/$v_name.sh | bash "$@"
 fi
