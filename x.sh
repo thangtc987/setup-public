@@ -4,12 +4,11 @@ if [[ -z "$1" ]]; then
     cat <<EOF 
 Version: 0.1
 USAGE: 
-    x help          Print this help
     x upgrade       Reinstall this app
     x <command>     Run API on the setup-public repo
 EOF
 elif [[ "$1" == "upgrade" ]]; then
-    wget -nv -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/install-helper.sh | bash
+    wget -nv -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/install-x.sh | bash
 else
     v_name=$1
     shift
