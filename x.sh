@@ -9,7 +9,7 @@ USAGE:
     x <command>     Run API on the setup-public repo
 EOF
 elif [[ "$1" == "upgrade" ]]; then
-    wget -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/install-helper.sh | bash
+    wget -nv -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/install-helper.sh | bash
 else
-    wget -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/$2.sh | bash
+    wget -q -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/$1.sh | bash
 fi
