@@ -1,1 +1,1 @@
-(p_name=user useradd $p_name -d /home/$p_name -s /bin/bash && echo "$p_name:$p_name" | chpasswd && usermod -aG sudo $p_user)
+(p_name=user && useradd $p_name -d /home/$p_name -s /bin/bash && echo "$p_name:$p_name" | chpasswd && usermod -aG sudo $p_user)
