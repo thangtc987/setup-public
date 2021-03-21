@@ -2,7 +2,7 @@
 
 if [[ -z "$1" ]]; then
     cat <<EOF 
-Version: 0.2.1
+Version: 0.2.2
 USAGE: 
     x upgrade           Reinstall this app
     x cat <command>     Show content of the comment
@@ -15,5 +15,5 @@ elif [[ "$1" == "cat" ]]; then
 else
     v_name=$1
     shift
-    wget -q -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/$v_name.sh | bash "$@"
+    wget -q -O- https://raw.githubusercontent.com/thangtc987/setup-public/main/$v_name.sh | bash -s - "$@"
 fi
