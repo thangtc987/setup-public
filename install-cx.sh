@@ -1,1 +1,1 @@
-x install-node && sudo npm i -g pnpm && sudo pnpm i -g ptt-cx-1
+x install-node && npm i -g pnpm && pnpm i -g ptt-cx-1
