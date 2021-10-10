@@ -1,4 +1,4 @@
-echo <<"EOF" > $HOME/.profile &&
+cat <<"EOF" > $HOME/.profile &&
 # ~/.profile: executed by the command interpreter for login shells.
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
 # exists.
@@ -28,7 +28,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 EOF
 
-echo <<"EOF" > $HOME/.bashrc
+cat <<"EOF" > $HOME/.bashrc
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
